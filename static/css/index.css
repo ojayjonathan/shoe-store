@@ -35,17 +35,20 @@
     background-color: white;
     border-radius: 999px;
     color: #000;
+    position: relative;
+   
+   
 }
 .site_hero .navbar a:hover {
    color:lightgray
 }
 .btn_white:hover{
-    animation: pulseWhite 2s infinite;
+    animation: pulseWhite 1.2s infinite ease-in-out;
 }
 .animated-text-background{
    width: 100%; 
   animation: textMove 20s infinite;
-  animation-duration: 50s;
+  animation-duration: 30s;
 }
 @keyframes textMove{
     0%{
@@ -58,16 +61,16 @@
 }
 @keyframes pulseWhite{
     0%{
-        transform: scale(0.95);
-        box-shadow:0 0 0 0 rgba(255, 255,255, 1);
+        box-shadow: 0 0 0 0px rgb(255, 255, 255 ,0.7);
+      
     }
-    0%{
-        transform: scale(1);
-        box-shadow:0 0 0 50px rgba(255, 255,255, 1);
+    70%{
+        box-shadow: 0 0 0 10px rgb(255, 255, 255 ,0);
+      
     }
-    0%{
-        transform: scale(0.95);
-        box-shadow:0 0 0 0 rgba(255, 255,255, 0.7);
+    100%{
+        box-shadow: 0 0 0 0px rgb(255, 255, 255 ,0);
+      
     }
 }
 @media (max-width: 768px){
@@ -82,6 +85,7 @@
     text-align: center !important;
 }}
 /* collections section*/
+
 .collections h1{
     font-weight: normal;
 }
@@ -93,12 +97,52 @@
     background-color: #df1f56;
     border-radius: 100px;
 }
+.collections button:hover{
+    color: white;
+    animation: pulse 1.2s infinite ease-in-out;
+}
 @media (max-width:767.98px){
-    .collections .col-xs-10{
+    .collections .col-11{
         margin-left: auto !important;
         margin-right: auto !important;
     }
     .collections .card{
         max-width: 420px;
     }
+}
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0px rgb(223, 31, 86 ,0.7);
+      
+    }
+    70%{
+        box-shadow: 0 0 0 10px rgb(223, 31, 86 ,0);
+      
+    }
+    100%{
+        box-shadow: 0 0 0 0px rgb(223, 31, 86 ,0);
+      
+    }
+}
+/* footer */
+.footer{
+    background-color: #323232;
+    text-align: center;
+    min-height: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.footer li{
+    margin-left: 2rem;
+}
+.footer ul a{
+    color: #c7c7cd;
+    text-transform: capitalize;
 }

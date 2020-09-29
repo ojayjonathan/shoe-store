@@ -1,0 +1,67 @@
+body  {
+font-family: 'Poppins', sans-serif;
+}
+h1{
+color: #000;
+line-height: 1;
+font-size: 2rem;}
+
+/*navbar*/
+.navbar{
+    background-color: #365c9a;
+}
+.navbar a{
+    color: #fff;
+}
+.navbar-brand{
+    display: flex;
+    position: relative;
+}
+.navbar-brand>span{
+    margin-left: -3rem;
+    
+}
+.navbar a:hover {
+    color:lightgray
+ }
+.heading{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.navbar img{
+    height: 50px;
+    width: auto;
+}
+/*products*/
+.breadcrumb{
+    padding-left: .2rem;
+    padding-bottom: 0;
+}
+.card{
+    background-color: #f5f5f5;
+}
+.product-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.price {
+    color: #f8952d;
+}
+.prev-price{
+    font-size: 90%;
+    color: #737070;
+}
+.addBtn{
+    background-color:#f8952d ;
+    color: #fff;
+    transition: all .5s ease;
+
+}
+.addBtn:hover{
+    background-color: #fff;
+    color:#f8952d;
+}
+del{
+    display: inline-block;
+}
