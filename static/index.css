@@ -1,0 +1,104 @@
+/*site hero section*/
+.site_hero{
+    background: linear-gradient(to right, #00ac6d 0%, #00ac6d 30%, #4e84c2 30%, #4e84c2 100%);
+    overflow: hidden !important;
+    min-height: 100vh;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+.site_hero h1{
+    color: #fff;
+    line-height: 1;
+    font-size: 52px;
+}
+
+.navbar a{
+    color: #fff;
+}
+.navbar-brand{
+    display: flex;
+    position: relative;
+}
+.navbar-brand>span{
+    margin-left: -3rem;
+}
+.heading{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.navbar img{
+    height: 50px;
+    width: auto;
+}
+
+.btn_white{
+    background-color: white;
+    border-radius: 999px;
+    color: #000;
+}
+.site_hero .navbar a:hover {
+   color:lightgray
+}
+.btn_white:hover{
+    animation: pulseWhite 2s infinite;
+}
+.animated-text-background{
+   width: 100%; 
+  animation: textMove 20s infinite;
+  animation-duration: 50s;
+}
+@keyframes textMove{
+    0%{
+        left:100%
+    }
+    100%{
+        left:-110%;
+    }
+    
+}
+@keyframes pulseWhite{
+    0%{
+        transform: scale(0.95);
+        box-shadow:0 0 0 0 rgba(255, 255,255, 1);
+    }
+    0%{
+        transform: scale(1);
+        box-shadow:0 0 0 50px rgba(255, 255,255, 1);
+    }
+    0%{
+        transform: scale(0.95);
+        box-shadow:0 0 0 0 rgba(255, 255,255, 0.7);
+    }
+}
+@media (max-width: 768px){
+    .site_hero{
+        background: #4e84c2;
+     }
+     .site_hero h1{
+        font-size: 32px;
+        margin-top: 2rem;
+    }
+.section-title{
+    text-align: center !important;
+}}
+/* collections section*/
+.collections h1{
+    font-weight: normal;
+}
+.collections .card{
+    background-color: #efefef;
+}
+.collections button{
+    color: white;
+    background-color: #df1f56;
+    border-radius: 100px;
+}
+@media (max-width:767.98px){
+    .collections .col-xs-10{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .collections .card{
+        max-width: 420px;
+    }
+}
