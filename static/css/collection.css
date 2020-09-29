@@ -39,6 +39,12 @@ font-size: 2rem;}
 }
 .card{
     background-color: #f5f5f5;
+    overflow: hidden;
+    box-shadow: 0px 6px 18px -9px rgba(226, 176, 176, 0.75);
+    transition: all .3s ease-in;
+}
+.card:hover{
+    transform: scale(1.03);
 }
 .product-name {
     white-space: nowrap;
