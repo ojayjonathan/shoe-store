@@ -1,0 +1,51 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #f5f5f5;
+}
+h3{
+    font-weight: 400;
+    color: #333;
+    text-transform: uppercase;
+}
+.row>div{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 19px;
+    margin-bottom: 20px;
+    transition: all .5s ease;
+}
+article, form{
+    transition: all .5s ease;
+}
+.edit{
+    float: right;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #365c9a;
+    outline:none;
+}
+.edit:active{
+    outline: none;
+}
+input{
+    border-radius: 2px;
+    padding: 5px;
+}
+.n-edit{
+    border: none;
+    outline-width: 0;
+    display: block;
+    transition: all .5s ease;
+    
+}
+.edit-mode{
+    outline-width: 0;
+    display: block;
+    border: 2px solid #ddd;
+    margin-bottom: .2rem;
+}
+.edit-mode:focus{
+    border:2px solid lightblue
+}

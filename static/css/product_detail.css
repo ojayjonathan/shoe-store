@@ -80,6 +80,7 @@ del{
     border-radius: 10px;
     padding: 10px 15px;
     color: #343a40;
+    
 }
 a i:hover{
     color:#f8952d;
@@ -94,7 +95,8 @@ a i{
 }
 .nav-pills button{
     border: 1px solid #dee2e6;
-    margin: 10px;
+    margin: 5px;
+    background-color: white;
     
 }
 .nav-pills .active{
@@ -109,4 +111,9 @@ a i{
     .side-nav{
         display: none;
     }
+}
+button:active{
+   outline: 0px solid white;
+   box-shadow: none !important;
+   -webkit-box-shadow:none !important
 }
